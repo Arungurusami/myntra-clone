@@ -143,7 +143,7 @@ export default function Orders() {
         try {
           setIsLoading(true);
           const product = await axios.get(
-            `http://10.238.115.178:5000/order/user/${user._id}`
+            `http://10.13.168.178:5000/order/user/${user._id}`
           );
           setorder(product.data);
         } catch (error) {

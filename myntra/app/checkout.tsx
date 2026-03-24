@@ -23,7 +23,7 @@ export default function Checkout() {
       return;
     }
     try {
-      await axios.post(`http://10.238.115.178:5000/order/create/${user._id}`, {
+      await axios.post(`http://10.13.168.178:5000/order/create/${user._id}`, {
         shippingAddress: "123 Main Street, Apt 4B, New York, NY, 10001",
         paymentMethod: "Card",
       });

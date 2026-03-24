@@ -53,7 +53,7 @@ export default function Bag() {
       try {
         setIsLoading(true);
         const bag = await axios.get(
-          `http://10.238.115.178:5000/bag/${user._id}`
+          `http://10.13.168.178:5000/bag/${user._id}`
         );
         setbag(bag.data);
       } catch (error) {
@@ -96,7 +96,7 @@ export default function Bag() {
   );
   const handledelete=async(itemid:any)=>{
     try {
-      await axios.delete(`http://10.234.159.178:5000/bag/${itemid}`)
+      await axios.delete(`http://10.13.168.178:5000/bag/${itemid}`)
       fetchproduct();
     } catch (error) {
       console.log(error)
